@@ -1,0 +1,8 @@
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\bin\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.deps.json
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\bin\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\bin\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.pdb
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.AssemblyInfoInputs.cache
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.AssemblyInfo.cs
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.csproj.CoreCompileInputs.cache
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Shared\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Shared.pdb
