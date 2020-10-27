@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Blazor_Simple_Signal.Client.dll": "sha256-u0wrXKiTK22U5dwxrC2gelUlNy3OuV1wyhahPVoMtWI=",
+      "Blazor_Simple_Signal.Client.dll": "sha256-EFlPH1CzVr1Y5WLMLuMcWxI67kV13LQi0O9LT+co7JI=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -71,7 +71,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "Blazor_Simple_Signal.Client.pdb": "sha256-w8B4R5SSz\/O8rnQpTIwQZwtTH39v0FBjsPYPIRLD4FE=",
+      "Blazor_Simple_Signal.Client.pdb": "sha256-vcsdp8R1ng7wJZuhMNruTNjWZ1Eflt7FDSY7cxGkBS4=",
       "Blazor_Simple_Signal.Shared.pdb": "sha256-P3RIv8qDR\/ER2D7tvnf4UTXbm8eje4q9IefrWFaD+Kk="
     },
     "runtime": {
