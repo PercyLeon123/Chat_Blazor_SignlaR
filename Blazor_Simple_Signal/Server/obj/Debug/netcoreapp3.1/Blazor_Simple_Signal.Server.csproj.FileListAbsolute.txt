@@ -205,8 +205,6 @@ C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netco
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.csprojAssemblyReference.cache
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.AssemblyInfoInputs.cache
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.AssemblyInfo.cs
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.csproj.CoreCompileInputs.cache
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.RazorAssemblyInfo.cache
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.RazorAssemblyInfo.cs
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.TagHelpers.input.cache
@@ -223,3 +221,12 @@ C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netco
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.dll
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.pdb
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.genruntimeconfig.cache
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.csproj.CoreCompileInputs.cache
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\bin\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.xml
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Server\obj\Debug\netcoreapp3.1\Blazor_Simple_Signal.Server.xml

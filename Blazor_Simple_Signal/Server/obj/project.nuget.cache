@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LsaCAu5OcsxZOZvMVESOC9WpONfYPfTN8HWL/xuUInHX+CQ3djpLTnmpCo5Bm2UZp5YLtXRXOA+FRR4KL7H76g==",
+  "dgSpecHash": "hzbb3QhyuQ+2Ll/guqj9dRHsXJMpznmw5vRgbJXiLXzCePYBrizmG2BjTAFJjNm/3l0BUOEem3vnZzNIxW/Z/w==",
   "success": true,
   "projectFilePath": "C:\\Aplicaciones\\Blazor_Simple_Signal\\Blazor_Simple_Signal\\Server\\Blazor_Simple_Signal.Server.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\3.1.9\\microsoft.aspnetcore.signalr.client.core.3.1.9.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.9\\microsoft.aspnetcore.signalr.common.3.1.9.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.9\\microsoft.aspnetcore.signalr.protocols.json.3.1.9.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
@@ -37,6 +38,11 @@
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.jsinterop\\3.1.6\\microsoft.jsinterop.3.1.6.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\pleon\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\system.io.pipelines\\4.7.3\\system.io.pipelines.4.7.3.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\system.net.http.json\\3.2.0\\system.net.http.json.3.2.0.nupkg.sha512",
     "C:\\Users\\pleon\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512",
