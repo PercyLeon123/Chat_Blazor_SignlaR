@@ -22,9 +22,9 @@ namespace Blazor_Simple_Signal.Server.Services
             await Clients.All.SendAsync("LogInMessage", user);
         }
 
-        public async Task LogIn(string user)
+        public async Task ReceivePrivateMessage(string user, GroupMessage groupMessage) 
         {
-            await Clients.Client(Context.ConnectionId).SendAsync("LogIn", user);
+            await Clients.Group(groupMessage.Group).SendAsync("ReceivePrivateMessage", groupMessage.Group, $"{user} : {groupMessage.Message}");
         }
 
         public override async Task OnConnectedAsync() 
@@ -42,6 +42,25 @@ namespace Blazor_Simple_Signal.Server.Services
         public async Task PrivateSendMessage(string user, string message, string idUser)
         {
             await Clients.Client(idUser).SendAsync("ReceiveMessage", user, message, ConnectedUser.ListUser.Count.ToString());
+        }
+
+        /* Grupos */
+
+        public async Task CreateGroup(string groupName, User user)
+        {
+            await Groups.AddToGroupAsync(Context.ConnectionId, groupName+user.Name);
+            await Groups.AddToGroupAsync(user.Id, groupName + user.Name);
+            await Clients.Group(groupName + user.Name).SendAsync("CreateGroup", groupName + user.Name, true);
+        }
+
+        //public async Task LeaveRoomAsync(string groupName)
+        //{
+        //    await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+        //}
+
+        public async Task MessageGroup(string groupName, string message)
+        {
+            await Clients.Group(groupName).SendAsync("OnMessage", message);
         }
     }
 }

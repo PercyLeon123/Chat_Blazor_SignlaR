@@ -16,13 +16,14 @@ namespace Blazor_Simple_Signal.Client.Pages
         protected string id = "";
         protected string userInput = "";
         protected string messageInput = "";
-        protected string idU = "";
         protected bool stateUser = false;
         protected string newUsuario = "";
         protected bool newUserMessage = false;
+        protected bool privatemessage = false;
 
         protected List<User> ListUsuario = new List<User>();
         protected List<string> messages = new List<string>();
+        protected ListMessagesUsers ListMessagesUsers = new ListMessagesUsers();
 
         protected override async Task OnInitializedAsync() 
         {
@@ -37,16 +38,24 @@ namespace Blazor_Simple_Signal.Client.Pages
                 StateHasChanged();
             });
 
+            hubConnection.On<string, bool>("CreateGroup", (group, message) =>
+            {
+                ListMessagesUsers.AddUser(group);
+                StateHasChanged();
+            });
+
+            hubConnection.On<string, string>("ReceivePrivateMessage", (group, message) =>
+            {
+                Console.WriteLine("ON :" + group);
+                
+                ListMessagesUsers.FindUser(group, message);
+                StateHasChanged();
+            });
+
             hubConnection.On<string>("LogInMessage", (user) =>
             {
                 RenderMessage();
                 newUsuario = user;
-                StateHasChanged();
-            });
-
-            hubConnection.On<string>("LogIn", (user) =>
-            {
-                stateUser = true;
                 StateHasChanged();
             });
 
@@ -65,13 +74,19 @@ namespace Blazor_Simple_Signal.Client.Pages
         {
             await hubConnection.StartAsync();
             await hubConnection.SendAsync("LogInMessage", userInput);
-            await hubConnection.SendAsync("LogIn", userInput);
         }
 
         public bool IsConnected => hubConnection.State == HubConnectionState.Connected;
 
-        protected Task Send2() =>
-            hubConnection.SendAsync("PrivateSendMessage", userInput, messageInput, idU);
+        protected async Task SendReceivePrivateMessage(GroupMessage groupMessage) 
+        {
+            await hubConnection.SendAsync("ReceivePrivateMessage", userInput, groupMessage);
+        }
+
+        protected async Task CreateGroup(User user) 
+        {
+            await hubConnection.SendAsync("CreateGroup", userInput, user);
+        }
 
         protected async Task RenderMessage() 
         {

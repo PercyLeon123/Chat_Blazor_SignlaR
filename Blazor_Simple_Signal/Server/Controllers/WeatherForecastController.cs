@@ -29,6 +29,7 @@ namespace Blazor_Simple_Signal.Server.Controllers
         ///</summary>
         ///<param name="id"></param>
         ///<returns></returns>
+        
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

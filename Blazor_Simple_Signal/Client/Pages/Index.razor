@@ -1,7 +1,6 @@
 ﻿@page "/"
 @inherits IndexBase
 
-
 <div class="row d-flex justify-content-around pt-3">
     <h5 class="col-12 mb-5">
         You are
@@ -14,7 +13,6 @@
             <span class="badge-danger p-2 rounded">Offline</span>
         }
     </h5>
-
 
     @if (newUserMessage)
     {
@@ -40,19 +38,16 @@
     <div class="col-4 border rounded row py-3">
 
         <h2 class="my-3">Chat Application</h2>
-        @if (stateUser)
+
+        @if (IsConnected)
         {
             <div class="form-group col-12">
-                <label>Mensaje</label>
+                <label>Mensaje publico</label>
                 <input type="text" class="form-control" @bind="messageInput" />
             </div>
-            <div class="form-group col-12">
-                <label>Enviar mensaje</label>
-                <input type="text" class="form-control" @bind="idU" />
-            </div>
+
             <div class="col-12 d-flex justify-content-around">
-                <button class="btn btn-primary" @onclick="Send" disabled="@(!IsConnected)">Send</button>
-                <button class="btn btn-warning" @onclick="Send2">Private Send</button>
+                <button class="btn btn-primary" disabled="@(!IsConnected)">Send</button>
             </div>
         }
         else
@@ -73,7 +68,7 @@
 
         @foreach (var usuarios in ListUsuario)
         {
-            <div class="col-12 d-flex align-items-center mt-1"><b class="mr-2">@usuarios.Name</b> ha iniciado session  <button class="btn btn-outline-primary btn-sm ml-2">Chatear</button></div>
+            <div class="col-12 d-flex align-items-center mt-1"><b class="mr-2">@usuarios.Name</b> ha iniciado session  <button class="btn btn-outline-primary btn-sm ml-2" @onclick="(()=>CreateGroup(usuarios))">Chatear</button></div>
         }
 
     </div>
@@ -87,3 +82,9 @@
     }
 </div>
 
+@foreach (var messagesUser in ListMessagesUsers.List_MenssagesUsers)
+{
+    <ChatUserPrivate MessagesUser="messagesUser" SendMessagePrivate="SendReceivePrivateMessage"/>
+}
+
+@*<div>Cantidad de Usuarios : @ListMessagesUsers.List_MenssagesUsers.Count</div>*@
