@@ -17,6 +17,7 @@ namespace Blazor_Simple_Signal.Shared
                 List_MenssagesUsers.Add(MessagesUser);
             }
         }
+
         public void FindUser(User user, string message)
         {
             List_MenssagesUsers.Find(x => x.User.Id == user.Id).ListMessages.Add(message);

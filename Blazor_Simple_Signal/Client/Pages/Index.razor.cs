@@ -30,16 +30,8 @@ namespace Blazor_Simple_Signal.Client.Pages
                 .WithUrl(navigationManager.ToAbsoluteUri("/chatHub"))
                 .Build();
 
-            hubConnection.On<MessagesUser>("ReceiveMessageU", (messageUser) =>
-            {
-                //var encodedMsg = $"{message}";
-                //messages.Add(encodedMsg);
-                //StateHasChanged();
-            });
-
             hubConnection.On<User, string>("ReceiveSendPrivateMessage", (user, message) =>
             {
-                Console.WriteLine("ON :" + user.Id);
                 ListMessagesUsers.AddUser(user);
                 ListMessagesUsers.FindUser(user, $"{user.Name}: {message}");
                 StateHasChanged();
@@ -59,9 +51,6 @@ namespace Blazor_Simple_Signal.Client.Pages
             });
 
         }
-
-        //protected Task Send() =>
-        //    hubConnection.SendAsync("SendMessage", $"<b>{userInput}</b> : {messageInput}");
 
         protected async Task SendLogIn() 
         {

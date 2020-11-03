@@ -426,8 +426,8 @@ C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netst
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Client.pdb
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\RazorDeclaration\Shared\ChatUserPrivate.razor.g.cs
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\Razor\Shared\ChatUserPrivate.razor.g.cs
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\usnoN7hDzD_-zgGr9H1xencaMrLT5ZcLO8xo5s7WsK4=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\jIVdzW69v_ynXNJ4sPErTEbsVTY0XHc-W_wiigk-mLI=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\dxmQIK4th_O1YTjnmJ2eXmVAP9_NpI-Hmd1ALGgmWME=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\tekRMQn0JSR7eD338L2hOU9a8HPVt4Ipk63uxhHqPvY=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\1PkW4nJgw5wrySFbZFVpf46rqNzALlBEj7slbH-39HA=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\GopwPiYLh072_oemzGAtWCoEqX4f2JGIvqy0rdCceKg=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\AlWxpJYkDLgwJMa-EqJx9jf6-MhtcF1xBA2z3qosq8U=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\glOXVPPvaupoSuhdsdKCdqbu1PfwyYB4C2xKk0P-aoA=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\TBigO3rvjbkJ2B66WneBuoo_QVyY7Ap13nJW_xZP_7c=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\ZGYLbYyoWFzw7VHyIkfM7KR3Ch2uPUrVxAUHsFI5vDE=.hash

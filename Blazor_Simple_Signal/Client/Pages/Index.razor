@@ -35,19 +35,14 @@
         </div>
     }
 
-    <div class="col-4 border rounded row py-3">
+    <div class="col-md-5 border rounded row py-3">
 
         <h2 class="my-3">Chat Application</h2>
 
         @if (IsConnected)
         {
-            <div class="form-group col-12">
-                <label>Mensaje</label>
-                <input type="text" class="form-control" @bind="messageInput" />
-            </div>
-
-            <div class="col-12 d-flex justify-content-around">
-                <button class="btn btn-primary" disabled="@(!IsConnected)">Send</button>
+            <div class="col-12">
+                Bienvenido <b>@UserChat.Name</b>
             </div>
         }
         else
@@ -63,7 +58,7 @@
 
     </div>
 
-    <div class="row col-4 border rounded d-flex align-content-start mx-0 px-0">
+    <div class="row col-md-5 col-lg-4 border rounded d-flex align-content-start mx-0 px-0">
         <h5 class="col-12 bg-primary px-2 mx-0 py-2 text-white font-weight-bold rounded-top">Lista de usuarios</h5>
 
         @foreach (var usuarios in ListUsuario)
@@ -81,10 +76,12 @@
         <div class="col-12 d-flex align-items-center">@((MarkupString)_message)</div>
     }
 </div>
+<div class="col-12 px-0 mt-5 pt-5 d-flex justify-content-around">
 
-@foreach (var messagesUser in ListMessagesUsers.List_MenssagesUsers)
-{
-    <ChatUserPrivate MessagesUser="messagesUser" SendMessagePrivate="SendPrivateMessage"/>
-}
+    @foreach (var messagesUser in ListMessagesUsers.List_MenssagesUsers)
+    {
+        <ChatUserPrivate MessagesUser="messagesUser" SendMessagePrivate="SendPrivateMessage" />
+    }
+</div>
 
 @*<div>Cantidad de Usuarios : @ListMessagesUsers.List_MenssagesUsers.Count</div>*@
