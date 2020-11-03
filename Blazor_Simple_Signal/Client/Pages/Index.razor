@@ -2,8 +2,8 @@
 @inherits IndexBase
 
 <div class="row d-flex justify-content-around pt-3">
-    <h5 class="col-12 mb-5">
-        You are
+    <h4 class="col-12 mb-5">
+        Chat Application : You are
         @if (IsConnected)
         {
             <span class="badge-success p-2 rounded">Online</span>
@@ -12,7 +12,7 @@
         {
             <span class="badge-danger p-2 rounded">Offline</span>
         }
-    </h5>
+    </h4>
 
     @if (newUserMessage)
     {
@@ -37,8 +37,6 @@
 
     <div class="col-md-5 border rounded row py-3">
 
-        <h2 class="my-3">Chat Application</h2>
-
         @if (IsConnected)
         {
             <div class="col-12">
@@ -61,7 +59,7 @@
     <div class="row col-md-5 col-lg-4 border rounded d-flex align-content-start mx-0 px-0">
         <h5 class="col-12 bg-primary px-2 mx-0 py-2 text-white font-weight-bold rounded-top">Lista de usuarios</h5>
 
-        @foreach (var usuarios in ListUsuario)
+        @foreach (var usuarios in ListUsuario.Where(x=>x.Name != UserChat.Name).ToList())
         {
             <div class="col-12 d-flex align-items-center mt-1"><b class="mr-2">@usuarios.Name</b> ha iniciado session  <button class="btn btn-outline-primary btn-sm ml-2" @onclick="(()=>CreateChatUser(usuarios))">Chatear</button></div>
         }

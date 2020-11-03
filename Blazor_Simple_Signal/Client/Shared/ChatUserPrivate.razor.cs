@@ -21,5 +21,11 @@ namespace Blazor_Simple_Signal.Client.Shared
             base.OnInitialized();
         }
 
+        protected void SendMessage() 
+        {
+            SendMessagePrivate.InvokeAsync(UserMessage);
+            UserMessage.Message = "";
+        }
+
     }
 }
