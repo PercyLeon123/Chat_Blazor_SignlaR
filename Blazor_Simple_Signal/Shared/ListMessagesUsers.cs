@@ -13,7 +13,7 @@ namespace Blazor_Simple_Signal.Shared
         {
             if (List_MenssagesUsers.Where(x => x.User.Id == user.Id).ToList().Count == 0) 
             {
-                MessagesUser MessagesUser = new MessagesUser(){ User = user, ListMessages = new List<string>() };
+                MessagesUser MessagesUser = new MessagesUser(){ User = user, Estado = true, ListMessages = new List<string>() };
                 List_MenssagesUsers.Add(MessagesUser);
             }
         }

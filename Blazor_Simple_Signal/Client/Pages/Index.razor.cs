@@ -69,6 +69,7 @@ namespace Blazor_Simple_Signal.Client.Pages
         protected void CreateChatUser(User user) 
         {
             ListMessagesUsers.AddUser(user);
+            ListMessagesUsers.List_MenssagesUsers.Find(x => x.User.Id == user.Id).Estado = true;
             StateHasChanged();
         }
 
