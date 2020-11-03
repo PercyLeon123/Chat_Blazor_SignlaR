@@ -9,17 +9,17 @@ namespace Blazor_Simple_Signal.Shared
     {
         public List<MessagesUser> List_MenssagesUsers { get; set; } = new List<MessagesUser>();
 
-        public void AddUser(string group) 
+        public void AddUser(User user) 
         {
-            if (List_MenssagesUsers.Where(x => x.Group == group).ToList().Count == 0) 
+            if (List_MenssagesUsers.Where(x => x.User.Id == user.Id).ToList().Count == 0) 
             {
-                MessagesUser MessagesUser = new MessagesUser(){ Group = group, ListMessages = new List<string>() };
+                MessagesUser MessagesUser = new MessagesUser(){ User = user, ListMessages = new List<string>() };
                 List_MenssagesUsers.Add(MessagesUser);
             }
         }
-        public void FindUser(string group, string message)
+        public void FindUser(User user, string message)
         {
-            List_MenssagesUsers.Find(x => x.Group == group).ListMessages.Add(message);
+            List_MenssagesUsers.Find(x => x.User.Id == user.Id).ListMessages.Add(message);
         }
     }
 }

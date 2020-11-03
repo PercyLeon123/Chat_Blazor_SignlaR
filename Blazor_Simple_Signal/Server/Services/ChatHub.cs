@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Blazor_Simple_Signal.Server.Services
@@ -15,17 +16,17 @@ namespace Blazor_Simple_Signal.Server.Services
             await Clients.All.SendAsync("ReceiveMessage", message);
         }
 
-        public async Task LogInMessage(string user) 
+        public async Task SendLogIn(string userName) 
         {
-            ConnectedUser.ListUser.Add(new User { Id = Context.ConnectionId, Name = user });
+            ConnectedUser.ListUser.Add(new User { Id = Context.ConnectionId, Name = userName });
             await Clients.All.SendAsync("ListUser", ConnectedUser.ListUser);
-            await Clients.All.SendAsync("LogInMessage", user);
+            await Clients.All.SendAsync("ReceiveSendLogIn", userName);
         }
 
-        public async Task ReceivePrivateMessage(string user, GroupMessage groupMessage) 
-        {
-            await Clients.Group(groupMessage.Group).SendAsync("ReceivePrivateMessage", groupMessage.Group, $"{user} : {groupMessage.Message}");
-        }
+        //public async Task ReceivePrivateMessage(string user, GroupMessage groupMessage) 
+        //{
+        //    await Clients.Group(groupMessage.Group).SendAsync("ReceivePrivateMessage", groupMessage.Group, $"{user} : {groupMessage.Message}");
+        //}
 
         public override async Task OnConnectedAsync() 
         {
@@ -35,13 +36,16 @@ namespace Blazor_Simple_Signal.Server.Services
 
         public override async Task OnDisconnectedAsync(Exception e) 
         {
+            var xx = ConnectedUser.ListUser.Where(x => x.Id == Context.ConnectionId);
+            //ConnectedUser.ListUser.Remove(xx);
             await Clients.All.SendAsync("ReceiveMessage", ""); // Falta
             await base.OnDisconnectedAsync(e);
         }
 
-        public async Task PrivateSendMessage(string user, string message, string idUser)
+        public async Task SendPrivateMessage(UserMessage userMessage, User userEmisor)
         {
-            await Clients.Client(idUser).SendAsync("ReceiveMessage", user, message, ConnectedUser.ListUser.Count.ToString());
+            userEmisor.Id = Context.ConnectionId;
+            await Clients.Client(userMessage.User.Id).SendAsync("ReceiveSendPrivateMessage", userEmisor, userMessage.Message);
         }
 
         /* Grupos */

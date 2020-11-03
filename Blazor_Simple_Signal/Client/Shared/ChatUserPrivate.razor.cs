@@ -9,17 +9,17 @@ namespace Blazor_Simple_Signal.Client.Shared
 {
     public class ChatUserPrivateBase : ComponentBase
     {
+        /* Observacion este componente guarda datos del destinatario */
         [Parameter] public MessagesUser MessagesUser { get; set; }
-        [Parameter] public EventCallback<GroupMessage> SendMessagePrivate { get; set; }
+        [Parameter] public EventCallback<UserMessage> SendMessagePrivate { get; set; }
 
-        protected GroupMessage GroupMessage = new GroupMessage();
+        protected UserMessage UserMessage = new UserMessage();
+
         protected override void OnInitialized()
         {
-            GroupMessage.Group = MessagesUser.Group;
+            UserMessage.User = MessagesUser.User;
             base.OnInitialized();
         }
-
-
 
     }
 }

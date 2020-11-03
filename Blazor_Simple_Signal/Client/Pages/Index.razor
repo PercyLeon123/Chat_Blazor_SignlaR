@@ -42,7 +42,7 @@
         @if (IsConnected)
         {
             <div class="form-group col-12">
-                <label>Mensaje publico</label>
+                <label>Mensaje</label>
                 <input type="text" class="form-control" @bind="messageInput" />
             </div>
 
@@ -54,7 +54,7 @@
         {
             <div class="form-group col-12">
                 <label>Usuario</label>
-                <input type="text" class="form-control" @bind="userInput" />
+                <input type="text" class="form-control" @bind="UserChat.Name" />
             </div>
             <div class="col-12 d-flex justify-content-around">
                 <button class="btn btn-primary" @onclick="SendLogIn">Log In</button>
@@ -68,7 +68,7 @@
 
         @foreach (var usuarios in ListUsuario)
         {
-            <div class="col-12 d-flex align-items-center mt-1"><b class="mr-2">@usuarios.Name</b> ha iniciado session  <button class="btn btn-outline-primary btn-sm ml-2" @onclick="(()=>CreateGroup(usuarios))">Chatear</button></div>
+            <div class="col-12 d-flex align-items-center mt-1"><b class="mr-2">@usuarios.Name</b> ha iniciado session  <button class="btn btn-outline-primary btn-sm ml-2" @onclick="(()=>CreateChatUser(usuarios))">Chatear</button></div>
         }
 
     </div>
@@ -84,7 +84,7 @@
 
 @foreach (var messagesUser in ListMessagesUsers.List_MenssagesUsers)
 {
-    <ChatUserPrivate MessagesUser="messagesUser" SendMessagePrivate="SendReceivePrivateMessage"/>
+    <ChatUserPrivate MessagesUser="messagesUser" SendMessagePrivate="SendPrivateMessage"/>
 }
 
 @*<div>Cantidad de Usuarios : @ListMessagesUsers.List_MenssagesUsers.Count</div>*@

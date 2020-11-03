@@ -13,8 +13,7 @@ namespace Blazor_Simple_Signal.Client.Pages
         [Inject] protected NavigationManager navigationManager { get; set; }
 
         protected HubConnection hubConnection;
-        protected string id = "";
-        protected string userInput = "";
+        protected User UserChat = new User();
         protected string messageInput = "";
         protected bool stateUser = false;
         protected string newUsuario = "";
@@ -31,28 +30,22 @@ namespace Blazor_Simple_Signal.Client.Pages
                 .WithUrl(navigationManager.ToAbsoluteUri("/chatHub"))
                 .Build();
 
-            hubConnection.On<string>("ReceiveMessage", (message) =>
+            hubConnection.On<MessagesUser>("ReceiveMessageU", (messageUser) =>
             {
-                var encodedMsg = $"{message}";
-                messages.Add(encodedMsg);
+                //var encodedMsg = $"{message}";
+                //messages.Add(encodedMsg);
+                //StateHasChanged();
+            });
+
+            hubConnection.On<User, string>("ReceiveSendPrivateMessage", (user, message) =>
+            {
+                Console.WriteLine("ON :" + user.Id);
+                ListMessagesUsers.AddUser(user);
+                ListMessagesUsers.FindUser(user, $"{user.Name}: {message}");
                 StateHasChanged();
             });
 
-            hubConnection.On<string, bool>("CreateGroup", (group, message) =>
-            {
-                ListMessagesUsers.AddUser(group);
-                StateHasChanged();
-            });
-
-            hubConnection.On<string, string>("ReceivePrivateMessage", (group, message) =>
-            {
-                Console.WriteLine("ON :" + group);
-                
-                ListMessagesUsers.FindUser(group, message);
-                StateHasChanged();
-            });
-
-            hubConnection.On<string>("LogInMessage", (user) =>
+            hubConnection.On<string>("ReceiveSendLogIn", (user) =>
             {
                 RenderMessage();
                 newUsuario = user;
@@ -67,25 +60,27 @@ namespace Blazor_Simple_Signal.Client.Pages
 
         }
 
-        protected Task Send() =>
-            hubConnection.SendAsync("SendMessage", $"<b>{userInput}</b> : {messageInput}");
+        //protected Task Send() =>
+        //    hubConnection.SendAsync("SendMessage", $"<b>{userInput}</b> : {messageInput}");
 
         protected async Task SendLogIn() 
         {
             await hubConnection.StartAsync();
-            await hubConnection.SendAsync("LogInMessage", userInput);
+            await hubConnection.SendAsync("SendLogIn", UserChat.Name);
         }
 
         public bool IsConnected => hubConnection.State == HubConnectionState.Connected;
 
-        protected async Task SendReceivePrivateMessage(GroupMessage groupMessage) 
+        protected async Task SendPrivateMessage(UserMessage userMessage) 
         {
-            await hubConnection.SendAsync("ReceivePrivateMessage", userInput, groupMessage);
+            ListMessagesUsers.FindUser(userMessage.User, userMessage.Message);
+            await hubConnection.SendAsync("SendPrivateMessage", userMessage, UserChat);
         }
 
-        protected async Task CreateGroup(User user) 
+        protected void CreateChatUser(User user) 
         {
-            await hubConnection.SendAsync("CreateGroup", userInput, user);
+            ListMessagesUsers.AddUser(user);
+            StateHasChanged();
         }
 
         protected async Task RenderMessage() 
