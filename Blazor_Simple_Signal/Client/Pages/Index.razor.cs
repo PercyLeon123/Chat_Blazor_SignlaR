@@ -30,6 +30,13 @@ namespace Blazor_Simple_Signal.Client.Pages
                 .WithUrl(navigationManager.ToAbsoluteUri("/chatHub"))
                 .Build();
 
+            hubConnection.On<UserMessage>("ReceiveSendMessage", (userMessage) =>
+            {
+                ListMessagesUsers.AddUser(userMessage.User);
+                ListMessagesUsers.FindUser(userMessage.User, $"{userMessage.User.Name}: {userMessage.Message}");
+                StateHasChanged();
+            });
+
             hubConnection.On<User, string>("ReceiveSendPrivateMessage", (user, message) =>
             {
                 ListMessagesUsers.AddUser(user);

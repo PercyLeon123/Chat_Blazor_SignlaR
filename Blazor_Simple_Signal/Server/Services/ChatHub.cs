@@ -11,11 +11,6 @@ namespace Blazor_Simple_Signal.Server.Services
     {
         public string UserName;
 
-        public async Task SendMessage( string message) 
-        {
-            await Clients.All.SendAsync("ReceiveMessage", message);
-        }
-
         public async Task SendLogIn(string userName) 
         {
             ConnectedUser.ListUser.Add(new User { Id = Context.ConnectionId, Name = userName });
@@ -36,9 +31,9 @@ namespace Blazor_Simple_Signal.Server.Services
 
         public override async Task OnDisconnectedAsync(Exception e) 
         {
-            var xx = ConnectedUser.ListUser.Where(x => x.Id == Context.ConnectionId);
-            //ConnectedUser.ListUser.Remove(xx);
-            await Clients.All.SendAsync("ReceiveMessage", ""); // Falta
+            var user = ConnectedUser.ListUser.Find(x => x.Id == Context.ConnectionId);
+            ConnectedUser.ListUser.Remove(user);
+            await Clients.All.SendAsync("ListUser", ConnectedUser.ListUser);
             await base.OnDisconnectedAsync(e);
         }
 
@@ -46,6 +41,11 @@ namespace Blazor_Simple_Signal.Server.Services
         {
             userEmisor.Id = Context.ConnectionId;
             await Clients.Client(userMessage.User.Id).SendAsync("ReceiveSendPrivateMessage", userEmisor, userMessage.Message);
+        }
+
+        public async Task SendMessage(UserMessage userMessage) 
+        {
+            await Clients.All.SendAsync("ReceiveSendMessage", userMessage);
         }
 
         /* Grupos */

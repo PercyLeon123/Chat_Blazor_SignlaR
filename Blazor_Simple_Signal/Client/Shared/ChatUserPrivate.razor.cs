@@ -1,9 +1,5 @@
 ﻿using Blazor_Simple_Signal.Shared;
 using Microsoft.AspNetCore.Components;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Blazor_Simple_Signal.Client.Shared
 {
