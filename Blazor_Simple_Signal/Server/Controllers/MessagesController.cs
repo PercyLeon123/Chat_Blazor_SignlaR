@@ -12,7 +12,6 @@ namespace Blazor_Simple_Signal.Server.Controllers
         public string Post(UserMessage userMessage)
         {
             ChatHub ChatHub = new ChatHub();
-            
 
             ChatHub.SendMessage(userMessage);
             return "ok";

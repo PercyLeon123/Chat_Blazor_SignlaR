@@ -85,20 +85,16 @@ using Blazor_Simple_Signal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(0, "    ");
-            __builder.OpenElement(1, "div");
-            __builder.AddAttribute(2, "class", "row mx-0 px-0 rounded border pb-2");
-            __builder.AddAttribute(3, "style", "max-width:300px;");
-            __builder.AddMarkupContent(4, "\r\n        ");
-            __builder.OpenElement(5, "div");
-            __builder.AddAttribute(6, "class", "col-12 px-0");
-            __builder.AddAttribute(7, "style", "height: 270px;");
-            __builder.AddMarkupContent(8, "\r\n            ");
-            __builder.OpenElement(9, "div");
-            __builder.AddAttribute(10, "class", "col-12 mx-0 px-2 py-2 d-flex justify-content-sm-between bg-info text-white font-weight-bold rounded-top");
-            __builder.AddMarkupContent(11, "\r\n                ");
-            __builder.OpenElement(12, "div");
-            __builder.AddContent(13, 
+            __builder.OpenElement(0, "div");
+            __builder.AddAttribute(1, "class", "row mx-0 px-0 rounded border pb-2");
+            __builder.AddAttribute(2, "style", "max-width:300px;");
+            __builder.OpenElement(3, "div");
+            __builder.AddAttribute(4, "class", "col-12 px-0");
+            __builder.AddAttribute(5, "style", "height: 270px;");
+            __builder.OpenElement(6, "div");
+            __builder.AddAttribute(7, "class", "col-12 mx-0 px-2 py-2 d-flex justify-content-sm-between bg-info text-white font-weight-bold rounded-top");
+            __builder.OpenElement(8, "div");
+            __builder.AddContent(9, 
 #nullable restore
 #line 8 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                       UserMessage.User.Name
@@ -108,12 +104,12 @@ using Blazor_Simple_Signal.Client.Shared;
 #nullable disable
             );
             __builder.CloseElement();
-            __builder.AddMarkupContent(14, "\r\n                ");
-            __builder.OpenElement(15, "button");
-            __builder.AddAttribute(16, "type", "button");
-            __builder.AddAttribute(17, "style", "position:absolute; right:2px; top:1px");
-            __builder.AddAttribute(18, "class", "close");
-            __builder.AddAttribute(19, "onclick", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+            __builder.AddMarkupContent(10, "\r\n                ");
+            __builder.OpenElement(11, "button");
+            __builder.AddAttribute(12, "type", "button");
+            __builder.AddAttribute(13, "style", "position:absolute; right:2px; top:1px");
+            __builder.AddAttribute(14, "class", "close");
+            __builder.AddAttribute(15, "onclick", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 9 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                                                                                                             (() => MessagesUser.Estado = false)
@@ -122,15 +118,12 @@ using Blazor_Simple_Signal.Client.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddMarkupContent(20, "\r\n                    ");
-            __builder.AddMarkupContent(21, "<span class=\"text-danger\">×</span>\r\n                ");
+            __builder.AddMarkupContent(16, "<span class=\"text-danger\">×</span>");
             __builder.CloseElement();
-            __builder.AddMarkupContent(22, "\r\n            ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(23, "\r\n            ");
-            __builder.OpenElement(24, "div");
-            __builder.AddAttribute(25, "class", "col-12 mx-0");
-            __builder.AddMarkupContent(26, "\r\n");
+            __builder.AddMarkupContent(17, "\r\n            ");
+            __builder.OpenElement(18, "div");
+            __builder.AddAttribute(19, "class", "col-12 mx-0");
 #nullable restore
 #line 14 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                  foreach (var message in MessagesUser.ListMessages)
@@ -139,10 +132,9 @@ using Blazor_Simple_Signal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(27, "                    ");
-            __builder.OpenElement(28, "div");
-            __builder.AddAttribute(29, "class", "col-12 px-0 mx-0");
-            __builder.AddContent(30, 
+            __builder.OpenElement(20, "div");
+            __builder.AddAttribute(21, "class", "col-12 px-0 mx-0");
+            __builder.AddContent(22, 
 #nullable restore
 #line 16 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                                                    message
@@ -152,7 +144,6 @@ using Blazor_Simple_Signal.Client.Shared;
 #nullable disable
             );
             __builder.CloseElement();
-            __builder.AddMarkupContent(31, "\r\n");
 #nullable restore
 #line 17 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                 }
@@ -160,19 +151,16 @@ using Blazor_Simple_Signal.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-            __builder.AddContent(32, "            ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(33, "\r\n        ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(34, "\r\n\r\n        ");
-            __builder.OpenElement(35, "div");
-            __builder.AddAttribute(36, "class", "col-12 px-2 d-flex justify-content-end");
-            __builder.AddMarkupContent(37, "\r\n            ");
-            __builder.OpenElement(38, "input");
-            __builder.AddAttribute(39, "type", "text");
-            __builder.AddAttribute(40, "placeholder", "Mensaje");
-            __builder.AddAttribute(41, "class", "form-control");
-            __builder.AddAttribute(42, "value", Microsoft.AspNetCore.Components.BindConverter.FormatValue(
+            __builder.AddMarkupContent(23, "\r\n\r\n        ");
+            __builder.OpenElement(24, "div");
+            __builder.AddAttribute(25, "class", "col-12 px-2 d-flex justify-content-end");
+            __builder.OpenElement(26, "input");
+            __builder.AddAttribute(27, "type", "text");
+            __builder.AddAttribute(28, "placeholder", "Mensaje");
+            __builder.AddAttribute(29, "class", "form-control");
+            __builder.AddAttribute(30, "value", Microsoft.AspNetCore.Components.BindConverter.FormatValue(
 #nullable restore
 #line 22 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                                                                                  UserMessage.Message
@@ -181,13 +169,13 @@ using Blazor_Simple_Signal.Client.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(43, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => UserMessage.Message = __value, UserMessage.Message));
+            __builder.AddAttribute(31, "onchange", Microsoft.AspNetCore.Components.EventCallback.Factory.CreateBinder(this, __value => UserMessage.Message = __value, UserMessage.Message));
             __builder.SetUpdatesAttributeName("value");
             __builder.CloseElement();
-            __builder.AddMarkupContent(44, "\r\n            ");
-            __builder.OpenElement(45, "button");
-            __builder.AddAttribute(46, "class", "btn btn-sm btn-primary");
-            __builder.AddAttribute(47, "onclick", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
+            __builder.AddMarkupContent(32, "\r\n            ");
+            __builder.OpenElement(33, "button");
+            __builder.AddAttribute(34, "class", "btn btn-sm btn-primary");
+            __builder.AddAttribute(35, "onclick", Microsoft.AspNetCore.Components.EventCallback.Factory.Create<Microsoft.AspNetCore.Components.Web.MouseEventArgs>(this, 
 #nullable restore
 #line 23 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
                                                              SendMessage
@@ -196,13 +184,10 @@ using Blazor_Simple_Signal.Client.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddContent(48, "Enviar");
+            __builder.AddContent(36, "Enviar");
             __builder.CloseElement();
-            __builder.AddMarkupContent(49, "\r\n        ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(50, "\r\n    ");
             __builder.CloseElement();
-            __builder.AddMarkupContent(51, "\r\n");
 #nullable restore
 #line 26 "C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\Shared\ChatUserPrivate.razor"
 }

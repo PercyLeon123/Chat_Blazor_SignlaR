@@ -1482,6 +1482,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Aplicaciones\\Blazor_Simple_Signal\\Blazor_Simple_Signal\\Client\\Blazor_Simple_Signal.Client.csproj": {
               "projectPath": "C:\\Aplicaciones\\Blazor_Simple_Signal\\Blazor_Simple_Signal\\Client\\Blazor_Simple_Signal.Client.csproj"
@@ -1500,6 +1501,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
@@ -1532,7 +1534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

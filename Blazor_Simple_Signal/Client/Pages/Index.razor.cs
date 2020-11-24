@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Blazor_Simple_Signal.Client.Helpers;
 using Blazor_Simple_Signal.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.SignalR.Client;
@@ -11,6 +12,7 @@ namespace Blazor_Simple_Signal.Client.Pages
     public class IndexBase : ComponentBase
     {
         [Inject] protected NavigationManager navigationManager { get; set; }
+        [Inject] protected Comun SingletonComun { get; set; }
 
         protected HubConnection hubConnection;
         protected User UserChat = new User();
