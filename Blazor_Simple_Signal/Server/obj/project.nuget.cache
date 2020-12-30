@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RiH+3o9MZ6dvEWWzRFwzksU4+sJ5gvLoJ+BTDT0MRktuM41pWJOmS7O8FOJABC6bANyTuOMKHoE1jRL+dIivwg==",
+  "dgSpecHash": "kUw+WZN4r2wTJsdniLV7e3KsziCDiXdHOiqGvyEvjuf6jTUaC0Pii3gXSnR+Z43ZstA/cu/JQ+eqCbytjqODJA==",
   "success": true,
   "projectFilePath": "C:\\Aplicaciones\\Blazor_Simple_Signal\\Blazor_Simple_Signal\\Server\\Blazor_Simple_Signal.Server.csproj",
   "expectedPackageFiles": [

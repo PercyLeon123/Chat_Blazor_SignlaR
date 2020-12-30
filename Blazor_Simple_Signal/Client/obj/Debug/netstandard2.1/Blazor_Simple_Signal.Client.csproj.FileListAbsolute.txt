@@ -426,9 +426,9 @@ C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netst
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\RazorDeclaration\Shared\ChatUserPrivate.razor.g.cs
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\Razor\Shared\ChatUserPrivate.razor.g.cs
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\Blazor_Simple_Signal.Client.RazorComponent.output.cache
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\EEvwP-dIPdQT3S1df8gTn-PeQT_tS_pzWd5CDEZLtWU=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\Derg7jOQNjYfVA3bFTZpJHeTV7lfQHTeeUmKT1Ov-aI=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\Q4ANzZN3d1KUpPJ4f5ewkQSvnj7USswmLBmnJGvrrLg=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\udmsGL5NBv2hA-j7V5R11T5ALI_Q38LRnYvgYDTWCF0=.hash
-C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\QF4Z4fCsKB_yS-CfU-jc63GL-PEi_cEQ2vyOCx_roFE=.hash
 C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\scopedcss\bundle\Blazor_Simple_Signal.Client.styles.css
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\8qGZsvE078d6AgDX8K5Evd7FzDIZdP279mLAKhq0Ze0=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\YO8MLww_nQ_H7kVk6BigdYnuTSJt0P_YlAdH-3HUd-g=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\KhxOar5_LjIy4gT1feTxAEc6hYM5Lnkl4BJ9384r5O4=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\M34c7JZ_if8vZxQ9GgHsGZTe0aA47r65DKLIGYAdGuk=.hash
+C:\Aplicaciones\Blazor_Simple_Signal\Blazor_Simple_Signal\Client\obj\Debug\netstandard2.1\integrity\cyI14zpHYoh06ZYzmD-oT3kCoMj2NPiCTwKnOdtRnbM=.hash
